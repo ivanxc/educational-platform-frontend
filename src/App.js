@@ -1,4 +1,5 @@
 import React from "react";
+import commonStyles from "./App.css"
 
 function App() {
   return (
