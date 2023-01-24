@@ -5,7 +5,7 @@ import MenuProfile from "./MenuProfile";
 
 const Header = () => {
     const [showSections, setShowSections] = useState(false);
-    const [showProfile, setShowProfile] = useState(false);
+    const [showProfile, setShowProfile] = useState(null);
 
     return (
         <div>
@@ -30,7 +30,7 @@ const Header = () => {
                 </nav>
                 {showSections ? <HeaderSections style={styles.sectionsSmallScreen}/> : null}
             </div>
-            {showProfile ? <MenuProfile hidden={true}/> : <MenuProfile hidden={false}/>}
+            {showProfile === null ? null : showProfile ? <MenuProfile hidden={false}/> : <MenuProfile hidden={true}/>}
         </div>
     );
 };
