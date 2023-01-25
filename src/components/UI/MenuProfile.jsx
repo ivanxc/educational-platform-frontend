@@ -15,15 +15,15 @@ const MenuProfile = (props) => {
             </div>
             <div id={styles.navigation}>
                 <a className={styles.navigationItem} href="/progress">
-                    <img src="./img/icons/progress.svg" className={styles.navigationItemIcon}/>
+                    <img src="./../img/icons//progress.svg" className={styles.navigationItemIcon}/>
                     <p className={styles.navigationItemName}>Мой прогресс</p>
                 </a>
                 <a className={styles.navigationItem} href="/settings">
-                    <img src="./img/icons/settings.svg" className={styles.navigationItemIcon}/>
+                    <img src="./../img/icons/settings.svg" className={styles.navigationItemIcon}/>
                     <p className={styles.navigationItemName}>Настройки</p>
                 </a>
                 <a className={styles.navigationItem}>
-                    <img src="./img/icons/night-mode.svg" className={styles.navigationItemIcon}/>
+                    <img src="./../img/icons/night-mode.svg" className={styles.navigationItemIcon}/>
                     <p className={styles.navigationItemName}>Темная тема</p>
                     <label className={styles.switch}>
                         <input type="checkbox"/>
@@ -31,7 +31,7 @@ const MenuProfile = (props) => {
                     </label>
                 </a>
                 <a className={styles.navigationItem} href="/logout">
-                    <img src="./img/icons/logout.svg" className={styles.navigationItemIcon}/>
+                    <img src="./../img/icons/logout.svg" className={styles.navigationItemIcon}/>
                     <p className={styles.navigationItemName}>Выйти</p>
                 </a>
             </div>

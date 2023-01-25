@@ -11,11 +11,11 @@ const Header = () => {
         <div>
             <div id={styles.container}>
                 <div id={styles.navigationSmallScreen}>
-                    <img id={styles.sectionsIcon} src="./img/icons/sections-icon.png" id={styles.sectionsIcon}
+                    <img id={styles.sectionsIcon} src="./../img/icons/sections-icon.png" id={styles.sectionsIcon}
                          onClick={() => setShowSections(!showSections)}/>
                 </div>
                 <a href="/" id={styles.logo}>
-                    <img src="./img/icons/capsula-logo64.svg" alt="logo"/>
+                    <img src="./../img/icons/capsula-logo64.svg" alt="logo"/>
                     <div>
                         <p id={styles.name}>Capsula</p>
                         <p id={styles.tagline}>Современное IT-образование</p>
