@@ -1,0 +1,166 @@
+#courses {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin: 40px 6vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#pageTitle {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.showToggle {
+    animation: introduceToggle 250ms forwards;
+}
+
+.hideToggle {
+    animation: annulToggle 250ms forwards;
+}
+
+@keyframes introduceToggle {
+    0% {
+        background-color: rgb(255, 255, 255);
+        height: 4px;
+        width: 0px;
+        margin-top: 8px;
+        border-radius: 32px;
+    }
+
+    100% {
+        background-color: #00B2FF;
+        height: 4px;
+        margin-top: 8px;
+        width: 100%;
+        border-radius: 32px;
+    }
+}
+
+@keyframes annulToggle {
+    0% {
+        background-color: #00B2FF;
+        height: 4px;
+        margin-top: 8px;
+        width: 100%;
+        border-radius: 32px;
+    }
+
+    100% {
+        background-color: rgb(255, 255, 255);
+        height: 4px;
+        width: 0px;
+        margin-top: 8px;
+        border-radius: 32px;
+    }
+}
+
+#toggles {
+    margin-top: 4px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.activeToggle {
+    background-color: #00B2FF;
+    height: 4px;
+    margin-top: 8px;
+    border-radius: 32px;
+}
+
+.courseCardList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 30px;
+}
+
+.courseCards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+form {
+    position: relative;
+    width: 350px;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 36px;
+    background: #ffffff;
+    border-radius: 16px;
+    border: none;
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    right: 16px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+button > img {
+    width: 18px;
+}
+
+button:before {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.courseCard {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    width: fit-content;
+}
+
+.courseCard img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(200, 200, 200, 0.65);
+}
+
+.courseCard img:hover {
+    box-shadow: 0 2px 8px rgba(143, 143, 143, 0.65);
+}
+
+.courseCard > .title {
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 4px;
+}
