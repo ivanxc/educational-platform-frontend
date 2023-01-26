@@ -5,7 +5,7 @@ import CourseCard from "./CourseCard";
 const CourseCardList = (props) => {
 
     const courses1 = [
-        {title: 'Java', link: '/java', imgSrc: 'https://psv4.userapi.com/c235031/u142670512/docs/d33/a44edd4e007d/java-course-preview.png?extra=2MxMydyvH2Vc_8ucH77_uOtTwoRiCd85UP8leDcKeI-mCkYThvtZcmrCMRUBNyFf5TKct7-24DEcbnJyvR17Fm0uCglgjUeTYHneL_a-2EnJGwox0k730zMZKK96c-vLd-mQYmU-avXZRqmRjjdfWNlKVg'},
+        {title: 'Java', link: '/courses/java', imgSrc: 'https://psv4.userapi.com/c235031/u142670512/docs/d33/a44edd4e007d/java-course-preview.png?extra=2MxMydyvH2Vc_8ucH77_uOtTwoRiCd85UP8leDcKeI-mCkYThvtZcmrCMRUBNyFf5TKct7-24DEcbnJyvR17Fm0uCglgjUeTYHneL_a-2EnJGwox0k730zMZKK96c-vLd-mQYmU-avXZRqmRjjdfWNlKVg'},
         {title: 'Java Memory Model', link: '/java-memory-model', imgSrc: 'https://psv4.userapi.com/c235031/u142670512/docs/d9/d4e78e65f77c/java-memory-model-course-preview.png?extra=px792U1rBfDWQAN_yHoZVqiTo5V_9ygI5og9iox1mPggDpJUe44yYBDPuBO9vqzHOEzHbAjoDAg5icfCWqV-NqmZnoaOwrlUm8vuP7IQ0CPsA5ben4dP-Y7NgzWUA_3CfUX0NNxRsIXr5xn-l6HufWxPaw'},
         {title: 'Postgres', link: '/postgres', imgSrc: 'https://psv4.userapi.com/c235031/u142670512/docs/d45/2204b69eab5e/postgres-course-preview.png?extra=z5zIKCe61erTwrIWTJt0Z5EVOWCcjojR-rzvOqGomeuxqp-3yOa31jOyScYimTPyI3gEDHbn443__fxbXl8rfItSrSDJdS6_PJlFslv9W1ZIgBUT4DwQp33p7vkmjKqlgN9QCKCrPHlxKFiIl-lol6Gbqg'},
         {title: 'JDBC', link: '/jdbc', imgSrc: 'https://psv4.userapi.com/c235031/u142670512/docs/d46/c6cd9ea1f0e5/jdbc-course-preview.png?extra=bYpWJqI2hwthGsMMeazIINGce83KpBTCRa-2LO7x8-bzcGQOnJ5bK12iYMZxb3qbG4uuyd_OSl0QnmJJZtyvSEbBEjx9s8SCLFewF9UMXpWmSvNBApmxwPbOWwJmWbX3lEGHl52il-csbweOavhnE9E66Q'},

@@ -3,6 +3,7 @@ import Courses from "../pages/Courses";
 import Auth from "../pages/Auth";
 import Error from "../pages/Error";
 import Landing from "../pages/Landing";
+import Course from "../pages/Course";
 
 export const publicRoutes = [
     {path: '/welcome', component: <Landing/>, exact: true},
@@ -13,5 +14,6 @@ export const publicRoutes = [
 
 export const privateRoutes = [
     {path: '/courses', component: <Courses/>, exact: true},
+    {path: '/courses/java', component: <Course/>, exact: true},
     {path: '*', component: <Navigate to='/courses'/>, exact: true}
 ]
