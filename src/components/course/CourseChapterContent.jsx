@@ -8,7 +8,6 @@ const CourseChapterContent = (props) => {
         <div className={styles.chapterContent}>
             <div className={styles.chapterTitle}>{props.chapterTitle}</div>
             <div className={styles.chapterTopics}>
-                {console.log(props.topics)}
                 {props.topics?.map(topic =>
                     <a href={topic.id}>
                         <span>{idx++}. {topic.title}</span>

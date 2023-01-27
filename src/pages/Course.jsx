@@ -3,7 +3,6 @@ import CoursePreview from "../components/course/CoursePreview";
 import styles from '../components/course/Course.module.css'
 import CourseProgress from "../components/course/CourseProgress";
 import Header from "../components/UI/Header";
-import CourseChapterContent from "../components/course/CourseChapterContent";
 import CourseContent from "../components/course/CourseContent";
 
 const Course = () => {
