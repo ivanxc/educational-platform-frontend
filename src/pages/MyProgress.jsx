@@ -9,6 +9,7 @@ const MyProgress = () => {
         todayArticles: 5,
         todayTests: 3,
         todayTasks: 2,
+        myScore: 67,
         dates: {
             '2023-01-01': 1,
             '2023-01-02': 15,

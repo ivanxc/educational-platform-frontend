@@ -13,7 +13,7 @@ const PlayerStat = ({data}) => {
                 <div className={styles.activityText}>Сегодня</div>
                 <div id={styles.topBlock}>
                     <div id={styles.todayValues}>
-                        <ScoreCircle progress={65}/>
+                        <ScoreCircle progress={data.myScore}/>
                         <div id={styles.indicators}>
                             <div className={styles.indicator}>
                                 <img src="./../img/icons/articles-read.svg"/>Прочитано статей <span>{data.todayArticles}</span>
