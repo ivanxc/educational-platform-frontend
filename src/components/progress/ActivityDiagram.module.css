@@ -1,0 +1,112 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    height: 100%;
+    justify-content: space-between;
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#yourActivity {
+    display: flex;
+    flex-direction: column;
+}
+
+#yourTop {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+#yourTop > span {
+    color: #00D415;
+    font-weight: 500;
+}
+
+#advance {
+    font-size: 12px;
+    font-weight: 300;
+    color: #3E3E3E;
+}
+
+#otherActivityHidden {
+    visibility: hidden;
+}
+
+.fullHeightColumn {
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
+#otherActivityVisible {
+    visibility: visible;
+}
+
+#otherTop {
+    font-size: 12px;
+    font-weight: 300;
+    color: #3E3E3E;
+}
+
+#otherScores {
+    font-size: 10px;
+    font-weight: 300;
+    color: #3E3E3E;
+}
+
+#diagram {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    align-items: end;
+}
+
+.column {
+    width: 28px;
+    height: 40px;
+    border-radius: 4px 4px 0 0;
+}
+
+.fullHeightColumn:hover {
+    cursor: pointer;
+}
+
+.other {
+    background-color: #eeeeee;
+}
+
+@keyframes grow {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 40px;
+    }
+}
+
+.my {
+    background-color: #00D415;
+}
+
+@media(max-width: 400px) {
+    .column {
+        width: 24px;
+    }
+    #diagram {
+        column-gap: unset;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 360px) {
+    .column {
+        width: 20px;
+    }
+}
