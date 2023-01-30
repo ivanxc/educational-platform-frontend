@@ -8,16 +8,16 @@ import MyProgress from "../pages/MyProgress";
 // import Tests from "../pages/Tests";
 
 export const publicRoutes = [
-    {path: '/welcome', component: <Landing/>},
-    {path: '/auth', component: <Auth/>},
-    {path: '/error', component: <Error/>},
-    {path: '*', component: <Navigate to='/auth'/>}
+    {path: '/welcome', component: <Landing/>, exact: true},
+    {path: '/auth', component: <Auth/>, exact: true},
+    {path: '/error', component: <Error/>, exact: true},
+    {path: process.env.PUBLIC_URL + '*', component: <Navigate to='/auth'/>, exact: true}
 ]
 
 export const privateRoutes = [
-    {path: '/courses', component: <Courses/>},
-    {path: '/courses/java', component: <Course/>},
-    // {path: '/tests', component: <Tests/>},
-    {path: '/progress', component: <MyProgress/>},
-    {path: '*', component: <Navigate to='/courses'/>}
+    {path: process.env.PUBLIC_URL + '/courses', component: <Courses/>, exact: true},
+    {path: process.env.PUBLIC_URL + '/courses/java', component: <Course/>, exact: true},
+    // {path: process.env.PUBLIC_URL + '/tests', component: <Tests/>, exact: true},
+    {path: process.env.PUBLIC_URL + '/progress', component: <MyProgress/>, exact: true},
+    {path: process.env.PUBLIC_URL + '*', component: <Navigate to={process.env.PUBLIC_URL + '/courses'}/>, exact: true}
 ]
