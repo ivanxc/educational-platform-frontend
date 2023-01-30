@@ -17,7 +17,7 @@ export const publicRoutes = [
 export const privateRoutes = [
     {path: '/courses', component: <Courses/>},
     {path: '/courses/java', component: <Course/>},
-    {path: '/tests', component: <Tests/>},
+    // {path: '/tests', component: <Tests/>},
     {path: '/progress', component: <MyProgress/>},
     {path: '*', component: <Navigate to='/courses'/>}
 ]
