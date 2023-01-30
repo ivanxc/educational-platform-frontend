@@ -15,7 +15,7 @@ const Header = () => {
                          onClick={() => setShowSections(!showSections)}/>
                 </div>
                 <a href="/" id={styles.logo}>
-                    <img src="./../img/icons/capsula-logo64.svg" alt="logo"/>
+                    <img src={process.env.PUBLIC_URL + "/img/icons/capsula-logo64.svg"} alt="logo"/>
                     <div>
                         <p id={styles.name}>Capsula</p>
                         <p id={styles.tagline}>Современное IT-образование</p>
