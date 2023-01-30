@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/educational-platform-frontend/static/css/main.a7bd8f93.css",
-    "main.js": "/educational-platform-frontend/static/js/main.0d38aa0c.js",
+    "main.js": "/educational-platform-frontend/static/js/main.7f56aa26.js",
     "index.html": "/educational-platform-frontend/index.html",
     "main.a7bd8f93.css.map": "/educational-platform-frontend/static/css/main.a7bd8f93.css.map",
-    "main.0d38aa0c.js.map": "/educational-platform-frontend/static/js/main.0d38aa0c.js.map"
+    "main.7f56aa26.js.map": "/educational-platform-frontend/static/js/main.7f56aa26.js.map"
   },
   "entrypoints": [
     "static/css/main.a7bd8f93.css",
-    "static/js/main.0d38aa0c.js"
+    "static/js/main.7f56aa26.js"
   ]
 }
