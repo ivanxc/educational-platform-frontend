@@ -15,7 +15,7 @@ const MenuProfile = (props) => {
             </div>
             <div id={styles.navigation}>
                 <a className={styles.navigationItem} href="/progress">
-                    <img src="./../img/icons//progress.svg" className={styles.navigationItemIcon}/>
+                    <img src="./../img/icons/progress.svg" className={styles.navigationItemIcon}/>
                     <p className={styles.navigationItemName}>Мой прогресс</p>
                 </a>
                 <a className={styles.navigationItem} href="/settings">
