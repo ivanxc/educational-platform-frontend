@@ -11,13 +11,13 @@ export const publicRoutes = [
     {path: '/welcome', component: <Landing/>, exact: true},
     {path: '/auth', component: <Auth/>, exact: true},
     {path: '/error', component: <Error/>, exact: true},
-    {path: process.env.PUBLIC_URL + '*', component: <Navigate to='/auth'/>, exact: true}
+    {path: '*', component: <Navigate to='/auth'/>, exact: true}
 ]
 
 export const privateRoutes = [
-    {path: process.env.PUBLIC_URL + '/courses', component: <Courses/>, exact: true},
-    {path: process.env.PUBLIC_URL + '/courses/java', component: <Course/>, exact: true},
-    // {path: process.env.PUBLIC_URL + '/tests', component: <Tests/>, exact: true},
-    {path: process.env.PUBLIC_URL + '/progress', component: <MyProgress/>, exact: true},
-    {path: process.env.PUBLIC_URL + '*', component: <Navigate to={process.env.PUBLIC_URL + '/courses'}/>, exact: true}
+    {path: '/courses', component: <Courses/>, exact: true},
+    {path: '/courses/java', component: <Course/>, exact: true},
+    // {path: '/tests', component: <Tests/>, exact: true},
+    {path: '/progress', component: <MyProgress/>, exact: true},
+    {path: '*', component: <Navigate to='/courses'/>, exact: true}
 ]
