@@ -8,6 +8,7 @@
 #container {
     display: flex;
     flex-direction: column;
+    margin: 0 6vw;
     row-gap: 16px;
     max-width: 600px;
 }
@@ -57,7 +58,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 24px;
+    padding: 12px 12px;
     margin-top: 12px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(182, 182, 182, 0.25);
