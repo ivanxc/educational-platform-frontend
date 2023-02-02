@@ -133,7 +133,7 @@ const TestCreation = () => {
     ].concat(getSavedTests()));
 
     const [selectedTopics, setSelectedTopics] = useState([]);
-    const [modal, setModal] = useState(true);
+    const [modal, setModal] = useState(false);
     const [newTestName, setNewTestName] = useState('Новый тест')
 
     const handleDeleteSavedTest = (e, id) => {
