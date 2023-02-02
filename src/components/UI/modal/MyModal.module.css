@@ -1,0 +1,43 @@
+.myModal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.myModalContent {
+    padding: 24px;
+    background-color: #EEEEEE;
+    min-width: 250px;
+    box-shadow: 0 4px 16px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.myModal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myModalContent button {
+    display: flex;
+    position: inherit;
+    background-color: #00D415;
+    font-family: 'Montserrat', sans-serif;
+    width: auto;
+    padding: 6px 18px;
+    position: inherit;
+    align-self: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.myModalContent input {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}

@@ -1,0 +1,367 @@
+#tests {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin: 40px 6vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#pageTitle {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.showToggle {
+    animation: introduceToggle 250ms forwards;
+}
+
+.hideToggle {
+    animation: annulToggle 250ms forwards;
+}
+
+@keyframes introduceToggle {
+    0% {
+        background-color: rgb(255, 255, 255);
+        height: 4px;
+        width: 0px;
+        margin-top: 8px;
+        border-radius: 32px;
+    }
+
+    100% {
+        background-color: #00B2FF;
+        height: 4px;
+        margin-top: 8px;
+        width: 100%;
+        border-radius: 32px;
+    }
+}
+
+@keyframes annulToggle {
+    0% {
+        background-color: #00B2FF;
+        height: 4px;
+        margin-top: 8px;
+        width: 100%;
+        border-radius: 32px;
+    }
+
+    100% {
+        background-color: rgb(255, 255, 255);
+        height: 4px;
+        width: 0px;
+        margin-top: 8px;
+        border-radius: 32px;
+    }
+}
+
+#toggles {
+    margin-top: 4px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.activeToggle {
+    background-color: #00B2FF;
+    height: 4px;
+    margin-top: 8px;
+    border-radius: 32px;
+}
+
+#byTopic {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+#dailyTests {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 80px;
+    row-gap: 20px;
+}
+
+.topTest {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 420px;
+    max-width: 500px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(185, 185, 185, 0.25);
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.topTest > .topTestHeader {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+
+.topTestCourse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 8px;
+    padding: 8px 12px;
+    background-color: rgba(255, 197, 110, 0.25);
+    border-radius: 12px;
+}
+
+.topTestCoursePassed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 8px;
+    padding: 8px 12px;
+    background-color: rgba(93, 204, 84, 0.25);
+    border-radius: 12px;
+}
+
+.topTestList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.topTestCourseName {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.topTestCourseTopics {
+    font-weight: 400;
+    font-size: 12px;
+    color: #575757;
+}
+
+.topTestList img {
+    width: 20px;
+}
+
+#courseTestList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 80px;
+    row-gap: 20px;
+}
+
+#courseTestList > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 444px;
+    column-gap: 80px;
+    row-gap: 20px;
+}
+
+.courseTest {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(185, 185, 185, 0.25);
+    border-radius: 12px;
+}
+
+.courseTestCourseName {
+    display: flex;
+    flex-direction: row;
+    margin: 4px 10px 4px 10px;
+    font-size: 22px;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courseTestContent:has(.courseTestCourseName:hover) {
+    background-color: #F9F9F9;
+    border-radius: 12px;
+}
+
+.courseTestCourseName:hover {
+    background-color: #F9F9F9;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.courseTestContent {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    border-radius: 12px;
+}
+
+.courseChapters {
+    display: flex;
+    flex-direction: column;
+}
+
+.courseChapterName {
+    display: flex;
+    flex-direction: row;
+    margin: 6px 10px 6px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courseChapter:has(.courseChapterName:hover) {
+    background-color: #F9F9F9;
+    border-radius: 12px;
+}
+
+.courseChapterName:hover {
+    background-color: #F9F9F9;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.courseChapterTopics {
+    display: flex;
+    flex-direction: column;
+}
+
+.courseChapterTopic {
+    display: flex;
+    flex-direction: row;
+    padding: 4px 10px 4px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courseChapterTopic:hover {
+    background-color: #F9F9F9;
+    border-radius: 12px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.plusMinus {
+    height: 100%;
+}
+
+.plusMinus:hover {
+    color: #00b2ff;
+    filter: invert(46%) sepia(91%) saturate(1489%) hue-rotate(168deg) brightness(103%) contrast(103%);
+}
+
+.plusMinus img {
+    width: 16px;
+    height: 16px;
+}
+
+.selectBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    border: black 1px solid;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.selectBlock:hover {
+    cursor: pointer;
+}
+
+.selectBlock img {
+    width: 16px;
+    height: 16px;
+}
+
+.creationButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    column-gap: 12px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.creationButtons > div {
+    width: 100%;
+    margin-bottom: -6px;
+}
+
+.creationButtons > button {
+    font-family: 'Montserrat', sans-serif;
+    width: auto;
+    padding: 6px 18px;
+    position: inherit;
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.createButton {
+    background: #00B2FF;
+}
+
+.saveButton {
+    background: #5DCC54;
+}
+
+.savedTestsBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 6px;
+    row-gap: 6px;
+    max-width: 1000px;
+}
+
+.savedTest {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 8px;
+    background: #0068d9;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.savedTest > img {
+    padding: 2px;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 10px;
+    max-height: 10px;
+    background-color: #F9F9F9;
+    border-radius: 32px;
+}
