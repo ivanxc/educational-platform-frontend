@@ -8,7 +8,7 @@
 #container {
     display: flex;
     flex-direction: column;
-    margin: 0 6vw;
+    margin: 0 6vw 32px 6vw;
     row-gap: 16px;
     max-width: 600px;
 }
