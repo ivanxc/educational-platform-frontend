@@ -1,0 +1,100 @@
+#topicsSideBar {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    position: relative;
+    width: fit-content;
+    min-width: 200px;
+    height: 100vh;
+    background: linear-gradient(270deg, #F9F9F9 0%, rgba(249, 249, 249, 0) 100%);
+    filter: drop-shadow(1px 0px 6px rgba(158, 158, 158, 0.25));
+    overflow: hidden;
+}
+
+#coursePreviewImg {
+    width: 60px;
+    height: 60px;
+}
+
+#coursePreviewText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#courseInfo {
+    display: flex;
+    flex-direction: row;
+    column-gap: 12px;
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
+#courseName {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#courseProgress {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.chapter {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.chapterTitle {
+    display: flex;
+    flex-direction: row;
+    padding-left: 16px;
+}
+
+.chapterNumber {
+    text-align: left;
+    width: 36px;
+    min-width: 36px;
+}
+
+.chapterContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+.topic {
+    display: flex;
+    flex-direction: row;
+    padding: 2px 0;
+    padding-left: 16px;
+    padding-right: 4px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.topic:hover {
+    background-color: rgba(0, 163, 255, 0.25);
+}
+
+.topicNumber {
+    text-align: left;
+    width: 36px;
+    min-width: 36px;
+}
+
+@media(max-width: 700px) {
+    #topicsSideBar {
+        display: none;
+    }
+}
