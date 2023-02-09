@@ -83,6 +83,7 @@ const Tasks = () => {
             <div id={styles.container}>
                 <TopicsSideBar courseInfo={mockCourse}/>
                 <div id={styles.tasksContent}>
+                    <a id={styles.backToCourses} href="/courses/java"> <img src="./../img/icons/chevron-to-left.svg"/>Вернуться к теме</a>
                     <div id={styles.tasksHeader}>Задачи по теме <strong>2.5. Циклы</strong></div>
                     <div id={styles.tasksSolvedCounter}>Решено 5/7</div>
                     <div id={styles.tasksListContainer}>

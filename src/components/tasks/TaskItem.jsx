@@ -18,7 +18,7 @@ const TaskItem = ({task, grayBackground}) => {
     const statusToImg = new Map([
         ['SOLVED', "/img/icons/solved.svg"],
         ['IN_PROGRESS', "/img/icons/in-progress.svg"],
-        ['NO_ATTEMPTS', null],
+        ['NO_ATTEMPTS', null]
     ])
 
     return (
