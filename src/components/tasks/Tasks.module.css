@@ -1,0 +1,166 @@
+#tasks {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+#tasksContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-top: 40px;
+    margin-left: 90px;
+    margin-right: 6vw;
+    overflow: hidden;
+}
+
+#tasksHeader {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#tasksSolvedCounter {
+    font-size: 16px;
+    color: #9F9F9F;
+}
+
+#tasksListContainer {
+    width: available;
+    overflow: scroll;
+}
+
+#tasksList {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.taskItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 12px;
+    column-gap: 8px;
+    width: fit-content;
+}
+
+.taskItemHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 12px;
+    column-gap: 8px;
+    width: fit-content;
+    color: #7B7B7B;
+}
+
+.taskItemGray {
+    background-color: #F9F9F9;
+}
+
+.taskItemStatus {
+    max-width: 60px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.taskItemStatus > img {
+    height: 18px;
+}
+
+.taskItemName {
+    max-width: 360px;
+    min-width: 360px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.taskItemName:hover {
+    cursor: pointer;
+    color: #0085FF;
+}
+
+.taskItemSolution {
+    max-width: 70px;
+    min-width: 70px;
+    text-align: center;
+}
+
+.taskItemSolution > a > img {
+    width: 20px;
+    height: 20px;
+}
+
+.taskItemDifficulty {
+    max-width: 100px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.difficultyEasy {
+    color: #2DD147;
+}
+
+.difficultyMedium {
+    color: #FFD666;
+}
+
+.difficultyHard {
+    color: #FF6666;
+}
+
+.taskItemAcceptance {
+    max-width: 98px;
+    min-width: 98px;
+    text-align: center;
+}
+
+#tasksContent ::-webkit-scrollbar {
+    display: none;
+}
+
+@media(max-width: 1050px) {
+    .taskItemStatus {
+        max-width: 60px;
+        min-width: 60px;
+        text-align: center;
+    }
+
+    .taskItemName {
+        max-width: 260px;
+        min-width: 260px;
+    }
+
+    .taskItemSolution {
+        max-width: 70px;
+        min-width: 70px;
+    }
+
+    .taskItemDifficulty {
+        max-width: 100px;
+        min-width: 100px;
+    }
+
+    .taskItemAcceptance {
+        max-width: 98px;
+        min-width: 98px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 800px) {
+    #tasksContent {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        margin: 40px 6vw 0 6vw;
+    }
+}

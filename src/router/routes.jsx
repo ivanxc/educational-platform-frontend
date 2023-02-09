@@ -6,6 +6,7 @@ import Landing from "../pages/Landing";
 import Course from "../pages/Course";
 import MyProgress from "../pages/MyProgress";
 import Tests from "../pages/Tests";
+import Tasks from "../pages/Tasks";
 
 export const publicRoutes = [
     {path: '/welcome', component: <Landing/>, exact: true},
@@ -18,6 +19,7 @@ export const privateRoutes = [
     {path: '/courses', component: <Courses/>, exact: true},
     {path: '/courses/java', component: <Course/>, exact: true},
     {path: '/tests', component: <Tests/>, exact: true},
+    {path: '/tasks', component: <Tasks/>, exact: true},
     {path: '/progress', component: <MyProgress/>, exact: true},
     {path: '*', component: <Navigate to='/courses'/>, exact: true}
 ]
