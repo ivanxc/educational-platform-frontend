@@ -1,38 +1,36 @@
-import React, {useState} from 'react';
+import React, {forwardRef} from 'react';
 import styles from "./CodeEditor.module.css";
-import "./CodeMirrorOverride.css"
-import CodeMirror, {basicSetup} from '@uiw/react-codemirror';
-import {java} from "@codemirror/lang-java";
+import './CodeMirrorOverride.css'
+import CodeMirror from "@uiw/react-codemirror";
 
-const CodeEditor = ({value, setValue, editable}) => {
+const CodeEditor = forwardRef(({value, editable}, codeEditorRef) => {
 
-    const [editorTheme, setEditorTheme] = useState('light');
-    const themes = [{title: 'Светлая', theme: 'light'}, {title: 'Темная', theme: 'dark'}];
-
-    const onChange = React.useCallback((value, viewUpdate) => {
-    }, []);
-
-    window.addEventListener("keydown", function(e) {
-        if (e.key === 114 || (e.ctrlKey && e.keyCode === 70)) {
-            e.stopImmediatePropagation();
+    // Fix bug: фон gutter не смещался вниз при прокрутке блока кода
+    setTimeout(() => {
+        const gutters = document.getElementsByClassName('CodeMirror-gutters');
+        for (let gutter of gutters) {
+            let styles = gutter.getAttribute('style');
+            gutter.setAttribute('style', styles.replace(/height: \d+px/, 'height:' + gutter.style.height +  ' !important'));
         }
-    }, true);
+    }, 10);
+
+    const cursorBlinkRate = editable ? 530 : -1;
 
     return (
         <div id={styles.codeEditor}>
-            <CodeMirror className={styles.codeMirror}
+            <CodeMirror ref={codeEditorRef}
                 value={value}
-                extensions={[java(), basicSetup({tabSize: 4,
-                    foldGutter: false,
-                    autocompletion: true
-                })]}
-                onChange={onChange}
-                height={"100%"}
-                editable={editable}
-                theme={editorTheme}
+                options={{
+                    mode: 'java',
+                    tabSize: 4,
+                    fixedGutter: true,
+                    cursorBlinkRate: cursorBlinkRate,
+                    viewportMargin: Infinity,
+                }}
             />
         </div>
     );
-};
+
+});
 
 export default CodeEditor;

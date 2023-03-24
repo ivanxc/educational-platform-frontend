@@ -118,7 +118,7 @@ input:focus {
     outline: none;
 }
 
-button {
+#courses button {
     height: 100%;
     display: flex;
     align-items: center;
@@ -132,11 +132,11 @@ button {
     background: none;
 }
 
-button > img {
+#courses button > img {
     width: 18px;
 }
 
-button:before {
+#courses button:before {
     font-size: 20px;
     font-weight: bold;
 }

@@ -1,0 +1,136 @@
+#article {
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+}
+
+#articleContainer {
+    display: flex;
+    flex-direction: column;
+    background: #F4F5F6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#articleContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    margin-top: 40px;
+    padding: 0 8vw;
+    width: -webkit-fill-available;
+}
+
+#articleTitle {
+    font-size: 34px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    width: fit-content;
+}
+
+#relatedToArticleSections {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4px;
+    row-gap: 4px;
+    flex-wrap: wrap;
+    margin: 0 0 8px 0;
+}
+
+#relatedToArticleSections > a {
+    font-size: 16px;
+    color: #5597FF;
+    font-weight: 500;
+    background: none;
+    border: 1px solid #5597FF;
+    border-radius: 8px;
+    padding: 4px 12px;
+}
+
+#relatedToArticleSections > a:hover {
+    cursor: pointer;
+    background-color: #eaf2ff;
+}
+
+#comments {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+#comments > * {
+    margin: 0;
+}
+
+#commentsHeader {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+#commentWarning {
+    font-size: 14px;
+    color: #787878;
+    margin-bottom: 16px;
+}
+
+#commentWarning > a {
+    color: #007EB5;
+    text-decoration: underline;
+}
+
+#writeComment {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+#userCommentField {
+    width: 80%;
+    border: 1px #C8C8C8 solid;
+    border-radius: 12px;
+    padding: 6px 12px;
+    height: auto;
+    min-height: 20px;
+    outline: none;
+}
+
+#sendButton {
+    width: 24px;
+    height: 24px;
+}
+
+#sendButton:hover {
+    cursor: pointer;
+    filter: invert(45%) sepia(0%) saturate(1911%) hue-rotate(162deg) brightness(80%) contrast(114%);
+}
+
+#userCommentField:focus {
+    border: 1px #555555 solid;
+}
+
+#userCommentField[placeholder]:empty::before {
+    content: attr(placeholder);
+    color: #555555;
+}
+
+#userCommentField[placeholder]:empty:focus::before {
+    content: " ";
+}
+
+#commentList {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    position: relative;
+    left: -16px;
+    margin-top: 8px;
+}
+
+@media(max-width: 700px) {
+    #commentList {
+        width: 100%;
+    }
+}

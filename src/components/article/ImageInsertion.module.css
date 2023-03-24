@@ -1,0 +1,68 @@
+#insertion {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    row-gap: 4px;
+    width: 50vw;
+    height: 100%;
+}
+
+#elementStyle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    column-gap: 6px;
+    align-items: center;
+}
+
+#elementStyle > input {
+    width: 100%;
+    display: inline-block;
+}
+
+#elementStyle > p {
+    margin: 4px 0;
+}
+
+#content {
+    width: 100%;
+    margin: 6px 0;
+}
+
+#actionButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 8px;
+    column-gap: 8px;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 16px 0;
+}
+
+#okButton {
+    border: none;
+}
+
+#cancelButton {
+    color: #00D415;
+    background: none;
+    outline: #00D415 1px solid;
+    outline-offset: -1px;
+    border: none;
+}
+
+#okButton:hover, #cancelButton:hover {
+    cursor: pointer;
+}
+
+.blockPointerEvents {
+    pointer-events: none;
+}
+
+@media(max-width: 660px) {
+    #insertion {
+        width: fit-content;
+    }
+}

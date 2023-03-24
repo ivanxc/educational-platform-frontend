@@ -1,0 +1,137 @@
+#mediaPopUpMenu {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    column-gap: 20px;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F3F3F;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+#btn:hover {
+    cursor: pointer;
+}
+
+#btnImg {
+    width: 24px;
+    height: 24px;
+    background: none;
+    user-select: none;
+    filter: invert(99%) sepia(24%) saturate(2%) hue-rotate(262deg) brightness(108%) contrast(101%);
+}
+
+.btnHideOptions {
+    animation: toPlus 500ms forwards;
+}
+
+.btnShowOptions {
+    animation: toClose 500ms forwards;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+#mediaOptions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    height: 32px;
+    background-color: #3F3F3F;
+    width: fit-content;
+    padding: 4px 16px;
+    z-index: 100;
+    border-radius: 12px;
+}
+
+.showOptions {
+    animation: showOptions 200ms forwards;
+}
+
+.hideOptions {
+    animation: hideOptions 150ms forwards;
+}
+
+#mediaOptions > div {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+#mediaOptions > div > img {
+    width: 24px;
+    height: 24px;
+    user-select: none;
+}
+
+@keyframes toPlus {
+    0% {
+        transform: rotateY(0deg) rotate(-45deg);
+    }
+
+    100% {
+        transform: rotateY(0deg) rotate(0deg);
+    }
+}
+
+@keyframes toClose {
+    0% {
+        transform: rotateY(0deg) rotate(0deg);
+    }
+
+    100% {
+        transform: rotateY(0deg) rotate(-45deg);
+    }
+}
+
+@keyframes showOptions {
+    0% {
+        transform: translateX(-10px);
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 75%;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+
+@keyframes hideOptions {
+    0% {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        transform: translateX(-10px);
+        visibility: hidden;
+        opacity: 0%;
+    }
+}

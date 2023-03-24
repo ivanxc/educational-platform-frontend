@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./TopicsSideBar.module.css";
 
-const ChapterSideBar = ({chapter, courseName, chapterNumber}) => {
+const ChapterSideBar = ({chapter, courseName, chapterNumber, viewTopicId}) => {
     return (
         <div className={styles.chapter}>
             <div className={styles.chapterTitle}>
@@ -10,7 +10,8 @@ const ChapterSideBar = ({chapter, courseName, chapterNumber}) => {
             </div>
             <div className={styles.chapterContent}>
                 {chapter.topics?.map((topic, index) =>
-                    <a className={styles.topic} href={courseName + '/' + topic.id + '/test'} key={topic.title}>
+                    <a className={styles.topic + ' ' + (topic.id === viewTopicId ? styles.selectedTopic : '')}
+                       href={courseName + '/' + topic.id + '/test'} key={topic.title}>
                         <div className={styles.topicNumber}>
                             {chapterNumber + '.' + (index + 1) + '.'}
                         </div>

@@ -6,7 +6,8 @@
     position: relative;
     width: fit-content;
     min-width: 200px;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     background: linear-gradient(270deg, #F9F9F9 0%, rgba(249, 249, 249, 0) 100%);
     filter: drop-shadow(1px 0px 6px rgba(158, 158, 158, 0.25));
     overflow: hidden;
@@ -85,6 +86,10 @@
 
 .topic:hover {
     background-color: rgba(0, 163, 255, 0.25);
+}
+
+.selectedTopic {
+    background-color: rgba(0, 163, 255, 0.35);
 }
 
 .topicNumber {

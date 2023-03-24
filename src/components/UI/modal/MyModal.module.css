@@ -6,6 +6,8 @@
     left: 0;
     display: none;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    padding: 32px;
 }
 
 .myModalContent {
@@ -29,7 +31,6 @@
     font-family: 'Montserrat', sans-serif;
     width: auto;
     padding: 6px 18px;
-    position: inherit;
     align-self: center;
     color: #FFFFFF;
     font-weight: 500;

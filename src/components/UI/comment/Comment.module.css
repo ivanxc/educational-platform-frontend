@@ -1,0 +1,159 @@
+.comment {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    column-gap: 12px;
+    border-radius: 12px;
+    padding: 8px 16px;
+}
+
+#replies {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    margin-left: 60px;
+}
+
+.myReply {
+    padding-left: 16px;
+    margin: 4px 0 8px 0;
+}
+
+.myReplyUsername {
+    padding: 0;
+    margin: 0 0 4px 0px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #007EB5;
+}
+
+.comment .userPhoto {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+}
+
+.comment .commentInfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.comment > .commentInfo > .authorInfo {
+    display: flex;
+    flex-direction: row;
+    column-gap: 6px;
+    row-gap: 4px;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.comment > .commentInfo > .authorInfo > .username {
+    font-weight: 600;
+    color: #000000;
+}
+
+.comment > .commentInfo > .authorInfo > .commentDate {
+    font-weight: 400;
+    color: #797979;
+}
+
+.comment > .commentInfo > .commentText > .replyToUser {
+    font-weight: 600;
+    color: #007EB5;
+}
+
+.comment > .commentInfo > .commentText > .replyToUser:hover {
+    cursor: pointer;
+}
+
+.comment > .commentInfo > .commentText {
+    font-size: 13px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.comment > .commentInfo > .commentActions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 12px;
+    font-size: 14px;
+}
+
+.comment > .commentInfo > .commentActions > .likes {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4px;
+    align-items: center;
+    min-width: 32px;
+}
+
+.comment > .commentInfo > .commentActions > .likes > img {
+    height: 14px;
+    width: auto;
+}
+
+.comment > .commentInfo > .commentActions > .likes > img:hover {
+    cursor: pointer;
+}
+
+.liked {
+    color: #EE5162;
+    filter: invert(76%) sepia(77%) saturate(7393%) hue-rotate(329deg) brightness(108%) contrast(87%);
+    animation: 300ms ease-in-out alternate like-animation;
+}
+
+.comment > .commentInfo > .commentActions > .replyButton {
+    font-family: 'Montserrat', sans-serif;
+    background: none;
+    border: none;
+    padding: 0;
+    align-self: self-end;
+    font-weight: 400;
+    color: #007EB5;
+}
+
+.comment > .commentInfo > .commentActions > .replyButton:hover {
+    cursor: pointer;
+}
+
+.highlighted {
+    animation: 1s ease-in-out alternate highlight-animation;
+}
+
+@keyframes like-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes highlight-animation {
+    0% {
+        background: none;
+    }
+    25%, 75% {
+        background: rgb(157, 192, 255);
+    }
+    100% {
+        background: none;
+    }
+}
+
+@keyframes highlight-animation {
+    0% {
+        background: none;
+    }
+    25%, 75% {
+        background: rgb(157, 192, 255);
+    }
+    100% {
+        background: none;
+    }
+}

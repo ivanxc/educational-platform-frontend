@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./TopicsSideBar.module.css";
 import ChapterSideBar from "./ChapterSideBar";
 
-const TopicsSideBar = ({courseInfo}) => {
+const TopicsSideBar = ({courseInfo, viewTopicId}) => {
     return (
         <div id={styles.topicsSideBar}>
             <div id={styles.courseInfo}>
@@ -15,7 +15,8 @@ const TopicsSideBar = ({courseInfo}) => {
             </div>
             <div id={styles.content}>
                 {courseInfo.chapters?.map((chapter, index) =>
-                    <ChapterSideBar key={chapter.chapterTitle} chapter={chapter} courseName={courseInfo.courseName} chapterNumber={index + 1}/>
+                    <ChapterSideBar key={chapter.chapterTitle} chapter={chapter} courseName={courseInfo.courseName}
+                                    chapterNumber={index + 1} viewTopicId={viewTopicId}/>
                 )}
             </div>
         </div>

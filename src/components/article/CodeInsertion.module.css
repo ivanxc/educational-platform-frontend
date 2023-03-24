@@ -1,0 +1,71 @@
+#codeInsertion {
+    max-width: 1000px;
+    width: 50vw;
+}
+
+#elementStyle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    column-gap: 6px;
+    align-items: center;
+}
+
+#elementStyle > p {
+    margin: 4px 0;
+    white-space: nowrap;
+}
+
+#elementStyle > input {
+    width: available;
+}
+
+.option {
+    color: white;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+
+.option:hover {
+    cursor: pointer;
+}
+
+.selectedOption {
+    background-color: black;
+}
+
+#content {
+    width: 100%;
+    height: 50vh;
+}
+
+#actionButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 8px;
+    column-gap: 8px;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 16px 0;
+}
+
+
+#okButton {
+    border: none;
+}
+
+#cancelButton {
+    color: #00D415;
+    background: none;
+    outline: #00D415 1px solid;
+    outline-offset: -1px;
+    border: none;
+}
+
+#okButton:hover, #cancelButton:hover {
+    cursor: pointer;
+}

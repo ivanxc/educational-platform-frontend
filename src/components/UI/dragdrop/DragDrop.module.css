@@ -1,0 +1,50 @@
+#dragDropContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 8px;
+    width: 100%;
+    min-height: 60px;
+}
+
+#dragDropContainer:hover {
+    cursor: default;
+}
+
+.noFile {
+    background-color: rgba(200, 200, 200, 0.25);
+    border-radius: 8px;
+    padding: 12px 4px;
+}
+
+#dragDropContainer > #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 8px;
+    width: 100%;
+}
+
+.noFile:hover {
+    background-color: rgba(200, 200, 200, 0.5);
+    cursor: pointer;
+}
+
+#dragDropContainer img {
+    width: 32px;
+    height: 32px;
+}
+
+#dragDropContainer p {
+    margin: 0;
+    text-align: center;
+}
+
+#dragDropContainer > #content > #loadedImage {
+    max-height: 50vh;
+    max-width: 50vw;
+    height: max-content;
+    width: auto;
+}
