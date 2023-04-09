@@ -11,3 +11,7 @@ body {
 
 #root {
 }
+
+button {
+    border: none;
+}

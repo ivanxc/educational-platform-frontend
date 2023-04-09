@@ -227,7 +227,7 @@ const ArticleEditor = ({initialState, readOnly, setStateToParent}) => {
     const updateMediaPosition = () => {
         setTimeout(()=> {
             setMediaCoordinates({
-                top: window.getSelection().anchorNode.parentElement.offsetTop + 170,
+                top: window.getSelection().anchorNode.parentElement.offsetTop + 180,
                 left: window.getSelection().anchorNode.parentElement.getBoundingClientRect().left - 50
             })
         }, 1);
